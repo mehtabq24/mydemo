@@ -242,22 +242,19 @@
 <div class="clearfix justify-content-center">
 <div class="form-group float-left justify-content-left">
       <input type="text" class="form-control my-contol" id="uname" placeholder="Enter username" name="name" required style="width: 230px; height: 45px;">
-      <div class="valid-feedback">Valid.</div>
-      <div class="invalid-feedback">Please fill out this field.</div>
+<div id="show-error"> </div>
     </div>
 
 	<div class="form-group float-right">
-      <input type="password" class="form-control my-contol" id="pwd" placeholder="Enter Email" name="email" required style="width: 230px;height: 45px;">
-      <div class="valid-feedback">Valid.</div>
-      <div class="invalid-feedback">Please fill out this field.</div>
+      <input type="text" class="form-control my-contol" id="email" placeholder="Enter Email" name="email" required style="width: 230px;height: 45px;">
+	<div id="show_error"></div>
     </div>
 </div>
-<div class="form-group">
-      <input type="text" class="form-control" id="uname" placeholder="Enter Message" name="message" required style="height: 55px;">
-      <div class="valid-feedback">Valid.</div>
-      <div class="invalid-feedback">Please fill out this field.</div>
+<div class="form-group">	
+      <input type="text" class="form-control" id="message" placeholder="Enter Message" name="message" required style="height: 55px;">
+      <div id="showerror"></div>
     </div>
- 	<input type="submit" name="submit" class="btn btn-dark mb-2"></td></tr>
+ 	<input type="submit" name="submit" class="btn btn-dark mb-2 btn-controller"></td></tr>
  	</form>
 			</div>
 			</div>
@@ -292,3 +289,32 @@
 </footer>
 </body>
 </html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.btn-controller').click(function(){
+		var username = $('#uname').val();
+		if(username == ""){
+			$('#show-error').html('**The username must be filled.');
+			$('#show-error').css('color','red');
+			return false;
+		}	
+			if((username.length<=2) || (username.length>=26)){
+			$('#show-error').html('**The username must be<br>between 3 to 26 letters.');
+			$('#show-error').css('color','red');
+			return false;
+		}
+		var useremail = $('#email').val();
+		if(useremail == ""){
+			$('#show_error').html('**The email be filled.');
+			$('#show_error').css('color','red');
+			return false;
+		}
+		var usermessage = $('#message').val();
+		if(usermessage == ""){
+			$('#showerror').html('**The message be filled.');
+			$("#showerror").css('color','red');
+			return false;
+		}	
+		});
+	});
+</script>
