@@ -294,12 +294,12 @@
 		$('.btn-controller').click(function(){
 		var username = $('#uname').val();
 		if(username == ""){
-			$('#show-error').html('**The username must be filled.');
+			$('#show-error').html('**The username<br>must be filled.');
 			$('#show-error').css('color','red');
 			return false;
 		}	
 			if((username.length<=2) || (username.length>=26)){
-			$('#show-error').html('**The username must be<br>between 3 to 26 letters.');
+			$('#show-error').html('**The username<br>must be between <br>3 to 26 letters.');
 			$('#show-error').css('color','red');
 			return false;
 		}
