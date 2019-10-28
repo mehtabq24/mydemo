@@ -232,20 +232,37 @@
 				</table>
 				</div>
 				<div class="col-sm-6">
-				<table>
 		<form action="contact.php" method="post">
-			<div class="form-group">
-		<tr><td><input type="text" name="name" class="form-control" id="email" placeholder="Name"></td>
-			<td><input type="text" name="email" class="form-control ml-3" id="email" placeholder="Email"></td></tr>
-		</div>
- 		<div class="form-group">
- 			<tr><td><input type="text" name="message" class="form-control mb-2 mr-sm-2 mt-3" id="pwd" style="width: 215%;" placeholder="Message"></td></tr>
- 		</div>
- 		<tr><td>
- 							<input type="submit" name="submit" class="btn btn-dark mb-2"></td></tr>
+			<table>
+		<tr><td>
+<div class="form-group">
+      <label for="uname">Username:</label>
+      <input type="text" class="form-control" id="uname" placeholder="Enter username" name="name" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+		</td>
+
+			<td>
+	<div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pass" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+	</td>
+</tr>
+<tr><td>
+<div class="form-group">
+      <label for="uname">Username:</label>
+      <input type="text" class="form-control" id="uname" placeholder="Enter username" name="name" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+ 	</td></tr></table>
+ 	<input type="submit" name="submit" class="btn btn-dark mb-2"></td></tr>
  	</form>
-				</table>
-				</div>
+			</div>
 			</div>
 		</div>
 		</div>
