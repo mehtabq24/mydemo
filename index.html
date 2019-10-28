@@ -9,7 +9,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 <style type="text/css">
+body
+	{
+	font-family: tahoma;
+	}
 	nav ul li:hover {
 		background: lightgray;
 		height: inherit;
@@ -19,11 +25,72 @@
 		width: 100%;
 		height: -webkit-fill-available;
 	}
+/*	.navbar-nav .nav-item .nav-link:active{
+		background: white;
+	}*/
+	.navbar-expand-sm .navbar-nav .nav-link:active {
+		border-bottom: 20px solid red !important;
+}
+
+.testimonial{
+		background: white;
+		text-align: center;
+		padding: 30px 30px 50px;
+		margin: 0 15px 100px;
+		position: relative;
+		margin-top: 28px;
+
+	}
+	.testimonial .icon{
+		display: inline-block;
+		font-size: 80px;
+		color: #f28a0b;
+		margin-bottom: 20px;
+		opacity: 0.6;
+	}
+	.testimonial .description{
+		font-size: 16px;
+		color: #777;
+		text-align: justify;
+		margin-bottom: 0px;
+		opacity: 0.9;
+		letter-spacing: -1;
+
+	}
+	.testimonial .pic{
+		display: inline-block;
+		border: 6px solid white;
+		border-radius: 50%;
+		overflow: hidden;
+		z-index: 1;
+		position: relative;
+		box-shadow: 0 0 2px 2px #f4770b;
+	}
+	.testimonial .pic img{
+		width: 100%;
+		height: auto;
+	}
+	.testimonial .title{
+		font-size: 15px;
+		font-weight: bold;
+		color: ;
+		text-transform: capitalize;
+		margin: 0 0 5px 0;
+	}
+	.testimonial .post{
+		display: block;
+		font-size: 14px;
+		color: #ffd9b8;
+	}
+	.pic img{
+		width: 100px !important;
+		height: 50px;
+	}
+
 	@media (max-width: 600px){
 		.col-sm-4{
 			margin-top: 15px;
 		}
-
 		.clearfix .my-contol{
 			margin-top: 20px;
 			width: 160px !important;
@@ -269,6 +336,101 @@
 		</div>
 	</div>
 </section>
+<section>
+	<div class="demo" style="background: black;">
+	<div class="container-fluid">
+<div class="row">
+<div id="testimonial-slider" class="owl-carousel owl-theme">	
+<div class="testimonial">
+<span class="icon fa fa-qoute-left"></span>
+<p class="description">
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+</p>
+<div class="testimonial">
+<div class="pic">
+<img src="Media/Images/avatar-s-3.png">
+</div>
+<h3 class="title">Williumson</h3>
+<span class="post">Web Developer</span>
+</div>
+</div>
+<div class="testimonial">
+<span class="icon fa fa-qoute-left"></span>
+<p class="description">
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+</p>
+<div class="testimonial">
+<div class="pic">
+<img src="Media/Images/slider-img.jpg">
+</div>
+<h3 class="title">nature</h3>
+<span class="post">Web Developer</span>
+</div>
+</div>
+<div class="testimonial">
+<span class="icon fa fa-qoute-left"></span>
+<p class="description">
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+</p>
+<div class="testimonial">
+<div class="pic">
+<img src="Media/Images/avatar-s-18.png">
+</div>
+<h3 class="title">Pinky dev</h3>
+<span class="post">Software Developer</span>
+</div>
+</div>
+
+
+<div class="testimonial">
+<span class="icon fa fa-qoute-left"></span>
+<p class="description">
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+</p>
+<div class="testimonial">
+<div class="pic">
+<img src="Media/Images/avatar-s-18.png">
+</div>
+<h3 class="title">Pinky</h3>
+<span class="post">Software Developer</span>
+</div>
+</div>
+
+
+
+<div class="testimonial">
+<span class="icon fa fa-qoute-left"></span>
+<p class="description">
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+</p>
+<div class="testimonial">
+<div class="pic">
+<img src="Media/Images/avatar-s-3.png">
+</div>
+<h3 class="title">Williumson</h3>
+<span class="post">Developer</span>
+</div>
+</div>
+
+<div class="testimonial">
+<span class="icon fa fa-qoute-left"></span>
+<p class="description">
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+</p>
+<div class="testimonial">
+<div class="pic">
+<img src="Media/Images/avatar-s-18.png">
+</div>
+<h3 class="title">Pinky</h3>
+<span class="post">Software Developer</span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+	</div>
+</section>
 <footer>
 	<div class="container-fluid">
 		<div class="row justify-content-center">
@@ -287,6 +449,22 @@
 </footer>
 </body>
 </html>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+			$("#testimonial-slider").owlCarousel({
+			items:3,
+			itemsDesktop:[1000,3],
+			itemsDesktopSmall:[979,2],
+			itemsTablet:[768,2],
+			itemsMobile:[650,1],
+			pagination:true,
+			autoPlay:true,
+		});
+	});
+</script>
+
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('.btn-controller').click(function(){
